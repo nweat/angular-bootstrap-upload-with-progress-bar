@@ -1,0 +1,22 @@
+<div class="col-md-12 col-sm-12"></div>
+<div class="jumbotron text-center col-md-12 col-sm-12">
+  <h1 class="custom-google-font text-center">Sample Progress Bar</h1>
+  <p></p>
+
+  <div class="text-center">
+    <a class="btn btn-primary btn-md" ngf-select ngf-change="upload($files)" ngf-multiple="false" ngf-pattern="'image/*'"
+    ngf-accept="'image/*'" ngf-max-size="1MB" role="button">Upload</a>
+  </div>
+
+  <p></p>
+
+  <div class="text-center">
+  <div class="progress">
+      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="{{progressPerc}}" aria-valuemin="0" aria-valuemax="{{progressPerc}}" style="width:{{progressPerc}}%">
+      {{result}}
+      </div>
+  </div>
+  </div>
+  
+</div>
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="#/">
+
+    <title>Sample Progress Bar in Angular and Bootstrap</title>
+
+    <!-- External and Custom CSS -->
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href='//fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href="assets/css/navbar-fixed-top.css" rel="stylesheet">
+    <link href="assets/css/signin.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/ngDialog.css">
+    <link rel="stylesheet" href="assets/css/ngDialog-theme-default.css">
+    <link rel="stylesheet" href="assets/css/ngDialog-theme-plain.css">
+    <link rel="stylesheet" href="assets/css/ngDialog-custom-width.css">
+ 
+    <!-- JS -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
+	<script src="assets/js/ng-dialog/ngDialog.js"></script>
+    <script src="assets/js/ng-file/ng-file-upload-shim.min.js"></script> 
+    <script src="assets/js/ng-file/ng-file-upload.min.js"></script>     
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular-route.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular-cookies.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular-animate.min.js"></script>
+    <script type="text/javascript" src ="app/Services/Service.js"></script>
+	<script type="text/javascript" src ="app/Controllers/Controller.js"></script>
+	<script type="text/javascript" src ="app/app.js"></script>
+</head>
+
+<body ng-app="sample-angular">
+<p></p>
+
+<div class="container">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>-->
+            <a class="navbar-brand" href="#/">Angular and Bootstrap</a>
+        </div>
+        <!--<div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav ">
+                <li><a href="#/upload">Upload Data</a></li>
+            </ul>
+        </div>-->
+    </div>
+  </nav>
+  <div class="{{css}}" ng-view ></div>
+</div>
+
+<!-- Bootstrap core JavaScript
+  ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="assets/js/bootstrap/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
+
+<!--
+CODE NOT TESTED WITH ANGULAR 1.3+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-route.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-cookies.min.js"></script>-->
